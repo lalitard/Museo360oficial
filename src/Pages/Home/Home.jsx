@@ -12,13 +12,36 @@ function Home() {
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
-          <p className="hero-subtitle">OPENING ON 21ST FEBRUARY, 2018</p>
-          <h1 className="hero-title">Exhibition on Modern Era</h1>
+          <p className="hero-subtitle">INMERSIONATE EN LA SOCIEDAD VALDIVIA</p>
+          <h1 className="hero-title">La más antigua Revolución Neolítica de América</h1>
           <p className="hero-description">
-            Lorem Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Ut enim ad minim veniam.
+            Museo Real Alto 360 es una experiencia inmersiva que permite a los visitantes explorar la riqueza histórica y 
+            arqueológica del Complejo Cultural Real Alto desde cualquier parte del mundo.
           </p>
-          <Link to="/gallery" className="hero-button">GET STARTED</Link>
+          <Link to="/gallery" className="hero-button">¡Comenzar Tour!</Link>
+        </div>
+      </section>
+
+      {/* Info Section */}
+      <section className="info-section">
+        <div className="container">
+          <div className="info-grid">
+            <div className="info-card">
+              <div className="info-icon">🕐</div>
+              <h3>Opening Hours</h3>
+              <p>Mon - Fri: 10.00am to 05.00pm Sat: 12.00pm to 03.00 pm Sunday: Closed</p>
+            </div>
+            <div className="info-card">
+              <div className="info-icon">🚀</div>
+              <h3>Ongoing Exhibitions</h3>
+              <p>Mon - Fri: 10.00am to 05.00pm Sat: 12.00pm to 03.00 pm Sunday: Closed</p>
+            </div>
+            <div className="info-card">
+              <div className="info-icon">📅</div>
+              <h3>Upcoming Events</h3>
+              <p>Mon - Fri: 10.00am to 05.00pm Sat: 12.00pm to 03.00 pm Sunday: Closed</p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -61,29 +84,6 @@ function Home() {
             </div>
             <div className="gallery-item">
               <img src="/img/panoramica7.JPG" alt="Galería 10" />
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Info Section */}
-      <section className="info-section">
-        <div className="container">
-          <div className="info-grid">
-            <div className="info-card">
-              <div className="info-icon">🕐</div>
-              <h3>Opening Hours</h3>
-              <p>Mon - Fri: 10.00am to 05.00pm Sat: 12.00pm to 03.00 pm Sunday: Closed</p>
-            </div>
-            <div className="info-card">
-              <div className="info-icon">🚀</div>
-              <h3>Ongoing Exhibitions</h3>
-              <p>Mon - Fri: 10.00am to 05.00pm Sat: 12.00pm to 03.00 pm Sunday: Closed</p>
-            </div>
-            <div className="info-card">
-              <div className="info-icon">📅</div>
-              <h3>Upcoming Events</h3>
-              <p>Mon - Fri: 10.00am to 05.00pm Sat: 12.00pm to 03.00 pm Sunday: Closed</p>
             </div>
           </div>
         </div>
