@@ -1,3 +1,20 @@
+html, body {
+  background-color: #FFFFFF; /* Fuerza el fondo blanco */
+  color-scheme: light; /* Indica explícitamente que se use el esquema de colores claro */
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevenir scroll horizontal */
+  width: 100%;
+}
+
+/* Si tienes un elemento #root o similar que contenga toda tu app */
+#root {
+  background-color: #FFFFFF; /* O usa var(--color-quaternary) si prefieres */
+  min-height: 100vh;
+  width: 100%; /* Asegurar que ocupe todo el ancho */
+  padding: 0; /* Eliminar padding */
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
