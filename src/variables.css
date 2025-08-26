@@ -1,0 +1,20 @@
+:root {
+  /* Paleta de colores principal */
+  --color-primary: #0D0D0D;      /* Negro principal */
+  --color-secondary: #9FA4A6;    /* Gris secundario */
+  --color-tertiary: #495925;     /* Verde terciario */
+  --color-quaternary: #FFFFFF;   /* Gris claro cuaternario */
+  
+  /* Colores adicionales para el header */
+  --header-bg: var(--color-primary);
+  --header-text: var(--color-quaternary);
+  --header-accent: var(--color-tertiary);
+  --header-hover: var(--color-secondary);
+  
+  /* Transiciones */
+  --transition-standard: 0.3s ease;
+  
+  /* Sombras */
+  --shadow-light: 0 2px 10px rgba(13, 13, 13, 0.1);
+  --shadow-medium: 0 4px 15px rgba(13, 13, 13, 0.2);
+}
