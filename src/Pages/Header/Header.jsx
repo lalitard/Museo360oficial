@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logoIcon from '../../assets/museo-icono.png';

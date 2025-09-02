@@ -1,3 +1,4 @@
+import React from 'react';
 import { Routes, Route, useParams } from 'react-router-dom';
 import Header from './Pages/Header/Header';
 import Home from './Pages/Home/Home';

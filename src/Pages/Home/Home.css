@@ -93,10 +93,10 @@
 }
 
 .hero-button:hover {
-  background-color: transparent;
-  color: var(--color-tertiary);
-  border-color: var(--color-tertiary);
-  transform: translateY(-3px);
+  background-color: var(--color-quaternary);
+  color: var(--color-primary);
+  border-color: var(--header-accent);
+  transform: translateY(-2px);
 }
 
 /* Container */
