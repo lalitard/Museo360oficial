@@ -25,7 +25,7 @@ function Header() {
 
         {/* Sección adicional */}
         <div className="header-actions">
-          <Link to="/visitus" className="buy-ticket">¡Visítanos!</Link>
+          <Link to="/visitus" className="visit-link">¡Visítanos!</Link>
         </div>
       </div>
     </header>
