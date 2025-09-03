@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import heroImage from '../../assets/museo2.jpg';
@@ -18,7 +19,7 @@ function Home() {
             Museo Real Alto 360 es una experiencia inmersiva que permite a los visitantes explorar la riqueza histórica y 
             arqueológica del Complejo Cultural Real Alto desde cualquier parte del mundo.
           </p>
-          <Link to="/museum" className="hero-button">¡Comenzar Tour!</Link>
+          <Link to="/museum360" className="hero-button">¡Comenzar Tour!</Link>
         </div>
       </section>
 

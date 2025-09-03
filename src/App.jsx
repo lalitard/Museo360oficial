@@ -1,30 +1,30 @@
-import { Routes, Route, useParams } from 'react-router-dom';
-import Header from './Pages/Header/Header';
-import Home from './Pages/Home/Home';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
-// --- Componente genérico para una SALA ---
-function Sala() {
-  const { id } = useParams();
-
-  return (
-    <main style={{ marginTop: '80px', padding: '2rem' }}>
-      <h2>Estás en la Sala {id}</h2>
-      <p>Aquí se mostrará la vista panorámica de la sala {id}.</p>
-      {/* En el futuro, aquí irá el componente del visor 360 */}
-    </main>
-  );
-}
+// Importación de componentes
+import Header from './Pages/Header/Header';
+import Footer from './Pages/Footer/Footer';
+import Home from './Pages/Home/Home';
+import Museum360 from './Pages/Museum360/Museum360';
+import Blog from './Pages/Blog/Blog';
+import Contact from './Pages/Contact/Contact';
+import VisitUs from './Pages/VisitUs/VisitUs';
 
 function App() {
   return (
-    <div className="app">
+    <div className="App">
       <Header />
-      
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/sala/:id" element={<Sala />} />
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/museum360" element={<Museum360 />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/visitus" element={<VisitUs />} />
+        </Routes>
+      </main>
+      <Footer />
     </div>
   );
 }
