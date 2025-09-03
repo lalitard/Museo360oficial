@@ -1,3 +1,4 @@
+import React from 'react';
 export default function VisitUs() {
   return (
     <main style={{ marginTop: '80px', padding: '2rem' }}>
