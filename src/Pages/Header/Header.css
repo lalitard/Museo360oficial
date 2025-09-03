@@ -92,7 +92,7 @@
   align-items: center;
 }
 
-.buy-ticket {
+.visit-link {
   background-color: var(--header-accent);
   color: var(--color-quaternary);
   padding: 0.7rem 1.5rem;
@@ -103,7 +103,7 @@
   border: 2px solid var(--header-accent);
 }
 
-.buy-ticket:hover {
+.visit-link:hover {
   background-color: var(--color-quaternary);
   color: var(--color-primary);
   border-color: var(--header-accent);

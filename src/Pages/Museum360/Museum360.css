@@ -1,0 +1,46 @@
+.museum360-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.museum360-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.museum360-title {
+  font-size: 2.5rem;
+  margin-right: 15px;
+  color: #333;
+  font-weight: 600;
+}
+
+.logo-360 {
+  height: 40px;
+  width: auto;
+}
+
+.museum360-frame {
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Estilos responsivos para dispositivos móviles */
+@media (max-width: 768px) {
+  .museum360-header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .museum360-title {
+    margin-right: 0;
+    margin-bottom: 10px;
+    font-size: 2rem;
+  }
+}
