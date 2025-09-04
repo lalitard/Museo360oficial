@@ -1,6 +1,6 @@
 {
   "name": "museo-360-oficial",
-  "private": true,
+  "homepage": "https://MuseoRealAlto.github.io/Museo360oficial/",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
