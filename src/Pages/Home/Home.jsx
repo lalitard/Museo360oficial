@@ -28,19 +28,20 @@ function Home() {
           <div className="info-grid">
             <div className="info-card">
               <div className="info-icon">🕐</div>
-              <h3>Opening Hours</h3>
-              <p>Mon - Fri: 10.00am to 05.00pm Sat: 12.00pm to 03.00 pm Sunday: Closed</p>
+              <h3>Horarios de Visita</h3>
+              <p>Lunes a Viernes: 9:00am - 5:00pm<br/>Sabados: 10:00am - 4:00pm<br/>Domingos: Cerrado</p>
             </div>
             <div className="info-card">
-              <div className="info-icon">🚀</div>
-              <h3>Ongoing Exhibitions</h3>
-              <p>Mon - Fri: 10.00am to 05.00pm Sat: 12.00pm to 03.00 pm Sunday: Closed</p>
+              <div className="info-icon">🏺</div>
+              <h3>Cultura Valdivia</h3>
+              <p>Descubre la cultura mas antigua de America con mas de 5000 anos de historia. Explora ceramicas, figurinas y herramientas ancestrales.</p>
             </div>
             <div className="info-card">
-              <div className="info-icon">📅</div>
-              <h3>Upcoming Events</h3>
-              <p>Mon - Fri: 10.00am to 05.00pm Sat: 12.00pm to 03.00 pm Sunday: Closed</p>
+              <div className="info-icon">🌎</div>
+              <h3>Experiencia Virtual</h3>
+              <p>Recorre el museo desde cualquier lugar del mundo con nuestra tecnologia de realidad virtual 360 grados completamente inmersiva.</p>
             </div>
+
           </div>
         </div>
       </section>
@@ -48,10 +49,10 @@ function Home() {
       {/* Gallery Section */}
       <section className="gallery-section">
         <div className="container">
-          <h2 className="section-title">Our Exhibition Gallery</h2>
+          <h2 className="section-title">Galeria de Exhibiciones</h2>
           <p className="section-description">
-            Lorem Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua.
+            Explora nuestra coleccion de artefactos arqueologicos y espacios del complejo cultural Real Alto. 
+            Cada imagen te transportara a la vida cotidiana de la cultura Valdivia.
           </p>
           
           <div className="gallery-grid">
@@ -94,16 +95,15 @@ function Home() {
         <div className="container">
           <div className="quote-content">
             <h2>
-              <span className="highlight">Music</span> gives soul to the universe, 
-              wings to the <span className="highlight">mind</span>, flight 
-              to the <span className="highlight">imagination</span>
+              La <span className="highlight">arqueologia</span> nos conecta con nuestro pasado, 
+              la <span className="highlight">tecnologia</span> nos acerca al conocimiento, 
+              y la <span className="highlight">cultura</span> nos define como sociedad
             </h2>
             <p>
-              Lorem Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod 
-              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim 
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea 
-              commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit 
-              esse cillum dolore eu fugiat nulla pariatur.
+              El Museo Real Alto 360 representa un hito en la preservacion del patrimonio cultural ecuatoriano. 
+              A traves de la tecnologia inmersiva, ofrecemos una ventana unica hacia la civilizacion Valdivia, 
+              permitiendo que las futuras generaciones comprendan y valoren nuestro rico legado ancestral 
+              desde una perspectiva completamente nueva e interactiva.
             </p>
           </div>
         </div>
