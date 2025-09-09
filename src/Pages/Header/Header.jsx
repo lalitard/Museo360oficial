@@ -1,3 +1,4 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
 import './Header.css';
 import logoIcon from '../../assets/museo-icono.png';
@@ -25,7 +26,7 @@ function Header() {
 
         {/* Sección adicional */}
         <div className="header-actions">
-          <Link to="/visitus" className="buy-ticket">¡Visítanos!</Link>
+          <Link to="/visitus" className="visit-link">¡Visítanos!</Link>
         </div>
       </div>
     </header>
