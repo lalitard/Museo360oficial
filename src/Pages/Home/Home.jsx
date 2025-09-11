@@ -2,11 +2,20 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Home.css';
 import heroImage from '../../assets/museo2.jpg';
+const pub = (p) =>
+  new URL(
+    String(p).replace(/^\/+/, ""),
+    window.location.origin + (import.meta.env.BASE_URL || "/")
+  ).href;
+
+
 
 function Home() {
   return (
     <div className="home">
       {/* Hero Section */}
+      console.log(import.meta.env.BASE_URL);
+
       <section className="hero">
         <div className="hero-background">
           <img src={heroImage} alt="Vista principal del museo" />
@@ -56,38 +65,20 @@ function Home() {
             Cada imagen te transportara a la vida cotidiana de la cultura Valdivia.
           </p>
           
-          <div className="gallery-grid">
-            <div className="gallery-item">
-              <img src="/img/foto1.JPG" alt="Galería 1" />
-            </div>
-            <div className="gallery-item">
-              <img src="/img/foto2.JPG" alt="Galería 2" />
-            </div>
-            <div className="gallery-item">
-              <img src="/img/foto3.JPG" alt="Galería 3" />
-            </div>
-            <div className="gallery-item">
-              <img src="/img/foto4.JPG" alt="Galería 4" />
-            </div>
-            <div className="gallery-item">
-              <img src="/img/foto5.JPG" alt="Galería 5" />
-            </div>
-            <div className="gallery-item">
-              <img src="/img/panoramica3.JPG" alt="Galería 6" />
-            </div>
-            <div className="gallery-item">
-              <img src="/img/panoramica4.JPG" alt="Galería 7" />
-            </div>
-            <div className="gallery-item">
-              <img src="/img/panoramica5.JPG" alt="Galería 8" />
-            </div>
-            <div className="gallery-item">
-              <img src="/img/panoramica6.JPG" alt="Galería 9" />
-            </div>
-            <div className="gallery-item">
-              <img src="/img/panoramica7.JPG" alt="Galería 10" />
-            </div>
-          </div>
+         <div className="gallery-grid">
+          <div className="gallery-item"><img src={pub('img/foto1.JPG')} alt="Galería 1" /></div>
+          <div className="gallery-item"><img src={pub('img/foto2.JPG')} alt="Galería 2" /></div>
+          <div className="gallery-item"><img src={pub('img/foto3.JPG')} alt="Galería 3" /></div>
+          <div className="gallery-item"><img src={pub('img/foto4.JPG')} alt="Galería 4" /></div>
+          <div className="gallery-item"><img src={pub('img/foto5.JPG')} alt="Galería 5" /></div>
+          <div className="gallery-item"><img src={pub('img/panoramica3.JPG')} alt="Galería 6" /></div>
+          <div className="gallery-item"><img src={pub('img/panoramica4.JPG')} alt="Galería 7" /></div>
+          <div className="gallery-item"><img src={pub('img/panoramica5.JPG')} alt="Galería 8" /></div>
+          <div className="gallery-item"><img src={pub('img/panoramica6.JPG')} alt="Galería 9" /></div>
+          <div className="gallery-item"><img src={pub('img/panoramica7.JPG')} alt="Galería 10" /></div>
+        </div>
+
+
         </div>
       </section>
 
