@@ -16,6 +16,8 @@ import galeria7 from '../../assets/gallery/panoramica4.JPG';
 import galeria8 from '../../assets/gallery/panoramica5.JPG';
 import galeria9 from '../../assets/gallery/panoramica6.JPG';
 import galeria10 from '../../assets/gallery/panoramica7.JPG';
+import montubioIcon from '../../assets/montubio_icon.png';
+
 
 const slides = [
   { src: galeria1 }, { src: galeria2 }, { src: galeria3 },
@@ -26,6 +28,7 @@ const slides = [
 
 function Home() {
   const [index, setIndex] = useState(-1);
+  const [showMoreInfo, setShowMoreInfo] = useState(false);
 
   return (
     <div className="home">
@@ -56,19 +59,35 @@ function Home() {
               <p>Lunes a Viernes: 9:00am - 5:00pm<br/>Sabados: 10:00am - 4:00pm<br/>Domingos: Cerrado</p>
             </div>
             <div className="info-card">
-              <div className="info-icon">🏺</div>
-              <h3>Cultura Valdivia</h3>
-              <p>Descubre la cultura mas antigua de America con mas de 5000 anos de historia. Explora ceramicas, figurinas y herramientas ancestrales.</p>
+              <div className="info-icon">
+                <img src={montubioIcon} alt="Icono Cultura" />
+              </div>
+              <h3>Museo Real Alto</h3>
+              <p>Museo desarrollado con la colaboración de la comunidad circundante, a partir de una excavación científica pionera.</p>
+              <button className="info-button" onClick={() => setShowMoreInfo(!showMoreInfo)}>
+                {showMoreInfo ? 'Ver menos' : 'Ver más'}
+              </button>
             </div>
-            <div className="info-card">
-              <div className="info-icon">🌎</div>
-              <h3>Experiencia Virtual</h3>
-              <p>Recorre el museo desde cualquier lugar del mundo con nuestra tecnologia de realidad virtual 360 grados completamente inmersiva.</p>
-            </div>
-
           </div>
         </div>
       </section>
+
+      {/* More Info Section (Conditional) */}
+      {showMoreInfo && (
+        <section className="more-info-section">
+          <div className="container">
+            <p>
+              El sitio arqueológico Real Alto, fue descubierto y excavado en los años 1970 por el Dr. Jorge Marcos, junto a un equipo de la Universidad de Illinois, y es uno de los más importantes a nivel nacional e internacional. Las investigaciones interdisciplinares que se han llevado a cabo desde su descubrimiento, demuestran que la cultura Valdivia fue una de las primeras en desarrollar la agricultura en todo el continente americano. En el sitio Real Alto se han aplicado metodologías pioneras, que han aportado mucha información sobre los modos de vida de la cultura Valdivia. En el caso de la arquebotánica, los estudios desarrollados por la Dra. D. Pearsall permitieron demostrar la domesticación de las plantas en este periodo. Los estudios etnoarqueológicos que realizó el Dr. J. Zeidler, permitieron identificar similitudes entre la construcción de las viviendas Valdivia, y las de la etnia Shuar. Fechamientos por termoluminiscencia realizados en los años 1990 confirman a la cerámica de Valdivia como la más antigua del continente americano. Estos resultados, producto de investigaciones que han involucrado a académicos de instituciones internacionales, permiten no solo reconstruir la forma de vida de un pueblo ancestral, sino también hacer partícipe de los descubrimientos a las comunidades y así fomentar la recuperación de la identidad cultural de los pueblos. Sin embargo, esta información no es accesible a la sociedad sin la ayuda de un mediador, que transforme los datos científicos en información comprensible, de ahí la necesidad de incentivar la divulgación científica.
+            </p>
+            <p>
+              El Complejo Cultural Real Alto (CCRA), contiguo al sitio arqueológico epónimo, se concibió desde el principio como un modelo de integración de los resultados obtenidos de las investigaciones con la comunidad. Este complejo cultural puede dividirse en dos áreas definidas, pero integradas: la primera dedicada a la divulgación, donde encontramos el museo, una casa construida con técnicas tradicionales de la zona, un auditorio, un arboreto, donde se pueden identificar los recursos vegetales que usaba la cultura Valdivia, un huerto con plantas medicinales, un itinerario por el sitio arqueológico y un bar donde los visitantes pueden refrescarse. El otro espacio, está dedicado a la investigación, se compone de un laboratorio y una residencia para investigadores. Rompiendo con las corrientes tradicionales, casi exclusivamente de corte anticuarista, que dominaban la museografía arqueológica ecuatoriana en la década de 1980, el Dr. Luis Lumbreras, Dr. Marcos y la antropóloga Dra. Silvia Álvarez, pusieron en marcha el museo del CCRA, en colaboración activa con los comuneros de Pechiche. Así se integraron estudios antropológicos realizados paralelo a las excavaciones originales, ya que en las escuelas de campo (1982-1987), parte de Escuela de Arqueología de la ESPOL, incluyeron la participación de la comunidad indígena de la zona y artistas del grupo La Artefactoría, entre ellos Flavio Álava, Marco Alvarado y Pedro Dávila.
+            </p>
+            <p>
+              Desde que se creó el CCRA en la década de los 80 del siglo pasado, las investigaciones arqueológicas han continuado: han continuado las excavaciones, los estudios de los materiales, se han aplicado nuevas técnicas de datación, por termoluminiscencia o difractor de rayos X, producto de una colaboración entre la ESPOL, Universidad Autónoma de Barcelona, y la Universidad de Milán (Italia). Esta colaboración entre instituciones confirmó, a la cerámica Valdivia de RA como la más antigua del continente americano. Pero los avances en los trabajos no se quedaron ahí, se han realizado también prospecciones con georadar, estudios microscópicos de materiales líticos, y otras dataciones radiocarbónicos, en colaboración con la Universidad Federal del Extremo Oriente de Vladivostok, en la Federación Rusa, involucrando investigadores del Ecuador, Rusia, España y Japón,
+            </p>
+          </div>
+        </section>
+      )}
 
       {/* Gallery Section */}
       <section className="gallery-section">
