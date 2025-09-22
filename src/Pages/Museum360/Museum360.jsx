@@ -17,19 +17,11 @@ const Museum360 = () => {
             border: "none",
             maxWidth: "100%",
           }}
-          allow={{
-            "xr-spatial-tracking": true,
-            vr: true,
-            gyroscope: true,
-            accelerometer: true,
-            fullscreen: true,
-            autoplay: true,
-            xr: true,
-          }}
+          allow="xr-spatial-tracking; vr; gyroscope; accelerometer; fullscreen; autoplay; xr"
           scrolling="no"
-          allowFullScreen="true"
+          allowFullScreen={true}
           frameBorder="0"
-          src="https://webobook.com/public/68b77938f06a3057f473d732,en?ap=true&si=true&sm=false&sp=true&sfr=true&sl=true&sop=false&"
+          src="https://webobook.com/public/68b77938f06a3057f473d732,en?ap=true&si=false&sm=false&sp=false&sfr=true&sl=true&sop=false&"
           allowVR="yes"
         ></iframe>
       </div>
