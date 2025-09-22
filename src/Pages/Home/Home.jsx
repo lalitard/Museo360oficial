@@ -4,6 +4,13 @@ import Lightbox from "yet-another-react-lightbox";
 import "yet-another-react-lightbox/styles.css";
 import './Home.css';
 import heroImage from '../../assets/museo2.jpg';
+const pub = (p) =>
+  new URL(
+    String(p).replace(/^\/+/, ""),
+    window.location.origin + (import.meta.env.BASE_URL || "/")
+  ).href;
+
+
 
 // Importa las imágenes de la galería
 import galeria1 from '../../assets/gallery/foto1.JPG';
@@ -33,6 +40,8 @@ function Home() {
   return (
     <div className="home">
       {/* Hero Section */}
+      console.log(import.meta.env.BASE_URL);
+
       <section className="hero">
         <div className="hero-background">
           <img src={heroImage} alt="Vista principal del museo" />
@@ -97,7 +106,6 @@ function Home() {
             Explora nuestra colección de artefactos arqueológicos y espacios del complejo cultural Real Alto. 
             Cada imagen te transportará a la vida cotidiana de la cultura Valdivia.
           </p>
-          
           <div className="gallery-grid">
             {slides.map((slide, i) => (
               <div key={i} className="gallery-item" onClick={() => setIndex(i)}>
