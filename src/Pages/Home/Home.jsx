@@ -16,7 +16,7 @@ import galeria7 from '../../assets/gallery/panoramica4.JPG';
 import galeria8 from '../../assets/gallery/panoramica5.JPG';
 import galeria9 from '../../assets/gallery/panoramica6.JPG';
 import galeria10 from '../../assets/gallery/panoramica7.JPG';
-import montubioIcon from '../../assets/montubio_icon.png';
+import realaltoIcon from '../../assets/real_alto_icon.png';
 
 
 const slides = [
@@ -59,8 +59,8 @@ function Home() {
               <p>Lunes a Viernes: 9:00am - 5:00pm<br/>Sabados: 10:00am - 4:00pm<br/>Domingos: Cerrado</p>
             </div>
             <div className="info-card">
-              <div className="info-icon">
-                <img src={montubioIcon} alt="Icono Cultura" />
+              <div className="info-icon info-icon-img">
+                <img src={realaltoIcon} alt="Icono Cultura" />
               </div>
               <h3>Museo Real Alto</h3>
               <p>Museo desarrollado con la colaboración de la comunidad circundante, a partir de una excavación científica pionera.</p>

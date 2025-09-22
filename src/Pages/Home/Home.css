@@ -207,6 +207,10 @@
   width: auto;
 }
 
+.info-icon-img {
+  height: 100px; /* Aumenta la altura del contenedor del ícono */
+}
+
 .info-card h3 {
   font-size: 1.3rem;
   font-weight: 600;
